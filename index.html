@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head><title>Sistema solar</title>
+    <link rel= "stylesheet" href="Osvaldo.css"/>
+    <meta charset="UTF-8">
+    <meta name="author" content="Osvaldo Baltazar">
+    <meta name="Description" content="Esta pagina trata sobre el sistema solar">
+    <meta name="Keywords" content="Sol, Tierra, Marte, Mercurio, Venus, Jupiter, Saturno, Urano, Neptuno, Plutón, Planetas enanos, Meteoritos, Asteroides, Cometas, Espacio">
+</head>
+<body>
+    <header class="Os">
+        <h1 id="SS">Sistema Solar</h1>
+    </header><br><br><br>
+    <nav>
+        <ul>
+            <li><a href="https://www.nasa.gov">NASA</a></li>
+            <li><a href="https://www.spacex.com">SPACEX</a></li>
+            <li><a href="https://earth.google.es">PLANETA</a></li>
+        </ul>
+    </nav>
+    <section>
+    <p>El Sistema Solar es un conjunto de cuerpos celestes formado por el Sol, los planetas, sus lunas, asteroides, cometas y otros objetos espaciales. Se encuentra en la Vía Láctea y se mantiene unido gracias a la fuerza gravitacional del Sol.</p>
+    <h2 class="Sol">El Sol</h2>
+    <br>
+    <ul>
+        <li>Es una estrella y la fuente principal de luz y energía para el Sistema Solar.</li>
+        <li>Su temperatura en la superficie es de aproximadamente 5,500°C, pero en el núcleo puede superar los 15 millones de grados Celsius.</li>
+        <li>Está compuesto principalmente de hidrógeno (74%) y helio (24%).</li>
+    </ul>
+    <br><br><br><br><br><br><br><br><br>
+    <h2 class="LP">Los Planetas</h2>
+    <p>El Sistema Solar tiene ocho planetas, divididos en dos grupos:</p>
+    <br><br>
+    <h3 id="PR">Planetas Rocosos (Interiores)</h3>
+    <p>Son los más cercanos al Sol y tienen una superficie sólida.</p>
+    <ol>
+        <li>Mercurio - El más pequeño y el más cercano al Sol. No tiene atmósfera significativa.</li><br><br> 
+        <li>Venus - Su atmósfera es muy densa y atrapa el calor, lo que lo convierte en el planeta más caliente.</li><br><br> 
+        <li>Tierra - El único planeta conocido con vida y un 71% de su superficie cubierta por agua.</li><br><br><br>
+        <li>Marte - Conocido como el "planeta rojo" por su color característico debido al óxido de hierro.</li><br><br>
+    </ol>
+    <br>
+    <h3 class="PG">Planetas Gaseosos (Exteriores)</h3>
+    <p>Son gigantes y están compuestos principalmente de gas.</p>
+    <ol>
+        <li>Júpiter - El planeta más grande del Sistema Solar, con una tormenta gigante llamada la Gran Mancha Roja</li><br>
+        <li>Saturno - Famoso por sus anillos compuestos de hielo y polvo.</li><br><br>
+        <li>Urano - Tiene un eje de rotación inclinado, lo que lo hace girar "de lado".</li><br><br>
+        <li>Neptuno - El planeta más lejano y con los vientos más rápidos del Sistema Solar.</li><br>
+    </ol>
+    </section>
+    <aside>
+        <h2 id="CS">Curiosidades del Sistema Solar</h2>
+        <ul>
+            <Li>Un año en Mercurio dura solo 88 días, mientras que en Neptuno dura 165 años terrestres.</Li>
+            <Li>La Gran Mancha Roja de Júpiter es una tormenta que lleva más de 300 años activa.</Li>
+            <Li>El Sol contiene el 99.8% de la masa total del Sistema Solar.</Li>
+        </ul>
+        <br><br>
+    <h2 class="CC">Otros Cuerpos Celestes</h2>
+    <p>Plutón y los Planetas Enanos - Plutón dejó de ser considerado planeta en 2006 y ahora es un "planeta enano". También están Eris, Haumea, Makemake y Ceres.</p><br>
+    <p>Asteroides - Rocas espaciales que se encuentran en su mayoría en el Cinturón de Asteroides entre Marte y Júpiter.</p><br><br>
+    <p>Cometas - Objetos formados de hielo y polvo que desarrollan una cola cuando se acercan al Sol.</p><br>
+    <p>Meteoroides, Meteoros y Meteoritos - Pequeñas rocas espaciales que pueden entrar en la atmósfera de la Tierra y convertirse en estrellas fugaces.</p><br><br>
+     <div class="ima">
+        <img src="Sis.jpg" class="sis">
+     </div>
+        </aside>
+        <div style="clear: both;"></div>
+        <footer><p>Gracias por ver la pagina</p></footer>
+        <script>
+            let visitas = localStorage.getItem("contadorVisitas");
+  
+            if (visitas === null) {
+              visitas = 1;
+            } else {
+              visitas = parseInt(visitas) + 1;
+            }
+  
+            localStorage.setItem("contadorVisitas", visitas);
+  
+            const footer = document.querySelector("footer");
+            const parrafo = document.createElement("p");
+            parrafo.textContent = "Visitas en este navegador: " + visitas;
+            parrafo.style.color = "#fff";
+            footer.appendChild(parrafo);
+          </script>
+</body>
